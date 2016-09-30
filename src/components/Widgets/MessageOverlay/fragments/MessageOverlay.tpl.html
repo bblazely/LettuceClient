@@ -1,0 +1,3 @@
+<div class="MessageOverlay" ng-if="showOverlay()">
+    <alert ng-repeat="(index, message) in messages" type="{{message.type}}" close="close(index)">{{message.text | translate}}</alert>
+</div>

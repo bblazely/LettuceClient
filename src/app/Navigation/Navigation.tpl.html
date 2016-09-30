@@ -1,0 +1,27 @@
+<nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+    <div class="container-fluid">
+        <div class="navbar-inner">
+            <a class="navbar-brand" href="#"><img src="assets/img/logo-icon32.png"></a>
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" ng-init="navCollapsed = true" ng-click="navCollapsed = !navCollapsed" aria-expanded="false" aria-controls="navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+
+            <div class="navbar-profile pull-right" user-profile="profile"></div>
+            <span ng-if="profile">
+                <div style="float: right; margin: 7px 2px;" entity-search="" on-select-update="1"></div>
+                <div class="navbar-icon pull-right" message-list-popup="profile.entity_id"></div>
+            </span>
+        </div>
+        <div id="navbar" class="navbar-collapse collapse" ng-class="!navCollapsed && 'in'">
+            <ul class="nav navbar-nav">
+                <li ng-class="{ active: $state.includes('root.about') }"><a ui-sref="root.about" translate>BUTTON_ABOUT</a></li>
+                <li ng-class="{ active: $state.includes('root.sandpit') }"><a ui-sref="root.sandpit" translate>BUTTON_SANDPIT</a></li>
+                <li ng-if="profile" ng-class="{ active: $state.includes('root.entity', {public_id: profile.public_id}) }"><a ui-sref="root.entity({public_id: profile.public_id})" translate>BUTTON_HOME</a></li>
+            </ul>
+        </div><!--/.nav-collapse -->
+    </div>
+</nav>
+<div message-overlay=""></div>

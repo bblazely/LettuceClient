@@ -1,0 +1,31 @@
+)]}',
+{
+    "LOGIN_FORGOT_PW":                  "Forgot your password?",
+    "LOGIN_FORGOT_PW_HEAD":             "Oh, you forgot your password?",
+    "LOGIN_FORGOT_PW_PARA":             "Enter the email address you used when you signed up and we'll send you a link to reset it.",
+    "LOGIN_RESET_PW":                   "Reset Password",
+    "LOGIN_SIGN_UP":                    "Sign Up",
+    "LOGIN_NO_ACCOUNT":                 "Don't have an account?",
+    "LOGIN_HAVE_ACCOUNT":               "Already have an account?",
+    "LOGIN_REMEMBER_PW":                "Remembered your password?",
+    "LOGIN_CONFIRM_EMAIL_ADDRESS":      "Confirm Email Address",
+
+    "LOGIN_NO_VERIFICATION_EMAIL":      "Didn't receive a verification email?",
+    "LOGIN_FOUND_VERIFICATION_EMAIL":   "Your verification email just arrived?",
+    "LOGIN_VERIFY_ONLINE":              "Verify My Account",
+    "LOGIN_VERIFY_RESEND":              "Resend Verification Email",
+    "LOGIN_VERIFY_RESEND_PARA":         "If the original verification message didn't arrive, you can request a new one by clicking on the button below.",
+    "LOGIN_VERIFY_EMAIL_HEAD":          "Account Verification Pending",
+    "LOGIN_VERIFY_EMAIL_PARA":          "A verification message was sent to the email address you provided.",
+    "LOGIN_VERIFY_EMAIL_PARA_OFFLINE":  "Click on the link inside it to activate your account.",
+    "LOGIN_VERIFY_EMAIL_PARA_ONLINE":   "Enter the verification code provided.",
+
+    "HELP_LOGIN_NATIVE_PW":             "This password is incorrect",
+    "HELP_LOGIN_NATIVE_EMAIL_MISMATCH": "The email addresses must match",
+    "HELP_LOGIN_NATIVE_NOT_FOUND":      "Account not found! <a ng-click='view.change(VIEW.SIGN_UP)'>{{'LOGIN_SIGN_UP' | translate}}</a>?",
+    "HELP_LOGIN_NATIVE_EXISTS":         "Account exists! <a ng-click='view.change(VIEW.FORGOT_PW)'>{{'LOGIN_FORGOT_PW' | translate}}</a>",
+    "HELP_LOGIN_NATIVE_VERIFIED":       "Your account has already been verified, please log in normally.",
+    "HELP_LOGIN_NATIVE_VERIFY_FAIL":    "This code is incorrect",
+    "HELP_LOGIN_NATIVE_VERIFY_LINK_FAIL":"The verification link that you followed is no longer valid, please request a new one.",
+    "HELP_LOGIN_NATIVE_EMAIL_INVALID":  "This email address is not valid"
+}

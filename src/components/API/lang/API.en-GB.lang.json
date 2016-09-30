@@ -1,0 +1,5 @@
+)]}',
+{
+"ERROR_RTU_UNAVAILABLE": "Real time updates are not available. Refresh the page for updates.",
+"ERROR_RTU_AVAILABLE":   "Real time updates are now working again."
+}

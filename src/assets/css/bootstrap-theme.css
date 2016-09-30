@@ -1,0 +1,336 @@
+/* BB Modal Customisation */
+/* Compile Changes:
+    GutterWidth 15px -> 1px;
+*/
+
+.popover {
+    top: auto;
+}
+
+.popover.top {
+    margin-top: 0;
+    margin-bottom: 10px;
+}
+
+.popover {
+    padding: 5px;
+}
+
+.popover-content {
+    padding: 0;
+}
+
+*:focus {
+    outline: none !important;
+}
+
+.navbar-brand img {
+    width: 32px;
+    height: 32px;
+    margin: -7px 5px;
+}
+
+.navbar-icon {
+    #font-size: 24px;
+    padding: 10px 10px 6px;
+    color: #888;
+    cursor: pointer;
+}
+
+.navbar-profile {
+    padding: 15px 10px 0 5px;
+    color: #888;
+    cursor: pointer;
+}
+
+.modal-backdrop {
+    background: radial-gradient(circle, rgba(0,0,0,.15), rgba(0, 0, 0, .85));   /* leave these two seperate... older browsers will use the first one */
+    overflow: hidden;
+}
+
+.collapse.in {
+    visibility: inherit;
+}
+
+.collapsing {
+    transition: 0.35s opacity linear, 0.5s height linear;
+    overflow: visible;
+}
+
+.modal-backdrop.in {
+    opacity: 1;
+    filter: alpha(opacity=1);
+}
+
+.modal-dialog {
+    text-align: left;
+    margin: 0;
+}
+
+.modal {
+    height: 100%;
+    vertical-align: middle;
+    text-align: center;
+    overflow: auto;
+}
+
+.modal-content {
+    border-radius: 0 0 9px 9px;
+    overflow:hidden;
+    background-color: #f8f8f8;
+}
+
+.modal-header .close {
+    font-size: 1.8em;
+}
+
+.internal-footer {
+    background-color: #eee;
+    text-align: right;
+    margin: 10px -20px -10px;
+    border-top: 1px solid #e5e5e5;
+    border-radius: 0 0 9px 9px;
+    padding: 0;
+    min-height: 0;
+}
+
+.internal-footer > * {
+    margin: 5px;
+}
+
+.form-control.stack-top { border-radius: 5px 5px 0 0; border-bottom-width: 1px; }
+.form-control.stack-bottom { border-radius: 0 0 5px 5px; border-top-width: 0; }
+.form-control.stack-bottom:focus { border-top-width: 1px;}
+
+/* BB Brand Customisation */
+.navbar-brand {
+    color: #08c;
+}
+
+.navbar {
+    border: 0;
+    border-bottom: 1px solid #08c;
+    box-shadow: 0 0 5px black;
+}
+
+/* BB Icon color in modal headers */
+.modal-header .modal-icon {
+    color: #08c;
+    font-size: 1.4em;
+    vertical-align: bottom;
+}
+
+.modal-header {
+    padding: 7px;
+    background-color: #eee;
+    border-bottom: 1px solid #e5e5e5;
+}
+
+.modal-header .modal-icon + span {
+    cursor: default;
+    padding-left: 7px;
+    font-weight: bold;
+    text-shadow: 0 1px 0 rgba(255,255,255,.95);
+    color: #888;
+}
+
+.modal-internal-footer {
+    text-align: right;
+}
+
+.fa + a {
+    padding-left: 5px !important;
+}
+
+.navbar-nav > li > a {
+    display: inline-block;
+}
+
+.navbar-nav > li > a:hover {
+    border-bottom: 3px solid #08c;
+    padding-bottom: 12px;
+}
+
+.alert {
+    margin-bottom: 10px;
+    padding: 0 5px;
+    text-align: center;
+    font-size: 0.9em;
+}
+
+.alert-dismissable .close {
+    right: 0;
+    top: 0;
+}
+
+.form-group {
+    overflow: hidden;
+    padding: 5px;
+    margin: 0 -5px -5px;
+}
+
+label {
+    color: #08c;
+    font-size: 0.9em;
+    margin: 0 0 0 2px;
+    font-weight: normal;
+    cursor: pointer;
+}
+
+/* Hide/Show done in CSS to avoid having to have yet another ng-show/ng-hide directive. */
+
+input[type='code'] {
+    text-align: center;
+    padding: 2px 12px 0 !important;
+    letter-spacing: 0.25em;
+    font-size: 1.5em;
+}
+
+.form-control-help {
+    float: right;
+    display: block;
+    opacity: 0;
+    height: 0;
+    overflow: hidden;
+    padding: 0 5px 0;
+    font-size: 0.75em;
+    font-weight: 700;
+}
+
+
+.has-success .form-control-help,
+.has-error .form-control-help:not(:empty),
+.has-warning .form-control-help {
+    opacity: 1;
+    height: 15px;
+}
+
+.has-success .form-control-help:empty,
+.has-error .form-control-help:empty,
+.has-warning .form-control-help:empty {
+    height: 0 !important;
+    opacity: 0 !important;
+}
+
+
+.form-control-feedback {
+    margin-right: 5px;
+    font-style: normal;
+}
+
+.has-success .form-control-help {
+    color: #008800;
+}
+
+.has-error .form-control-help {
+    color: #a94442;
+ }
+
+.has-warning .form-control-help {
+    color: #8a6d3b;
+}
+
+.is-loading .form-control-feedback,
+.has-error .form-control-help,
+.has-error .form-control-feedback,
+.has-warning .form-control-help,
+.has-warning .form-control-feedback,
+.has-success .form-control-feedback {
+    display: block !important;
+}
+.has-success .form-control-feedback:before {
+    content: "\f00c";
+}
+.has-warning .form-control-feedback:before {
+    content: "\f12a";
+}
+.has-error .form-control-feedback:before {
+    content: "\f00d";
+}
+
+.is-loading .form-control-feedback:before {
+    content: "\f021";
+}
+
+.radio-right {
+    float: none !important;
+    margin: 0 0 1px 2px !important;
+}
+
+.radio-inline {
+    vertical-align: text-bottom;
+}
+
+h4:first-child { margin-top: 0 }
+p:last-child { margin-bottom: 0 }
+
+.dropdown-menu.pull-right:before {
+    right: 9px;
+    left: auto;
+}
+
+.dropdown-menu.pull-right:after {
+    right: 10px;
+    left: auto;
+}
+
+.dropdown-menu.pull-left:before {
+    left: 9px;
+    right: auto;
+}
+
+.dropdown-menu.pull-left:after {
+    left: 9px;
+    right: auto;
+}
+
+.dropdown-menu:before {
+    left: 50%;
+    margin-left: -5px;
+    position: absolute;
+    top: -7px;
+    display: inline-block;
+    border-right: 7px solid transparent;
+    border-bottom: 7px solid #ccc;
+    border-left: 7px solid transparent;
+    border-bottom-color: rgba(0, 0, 0, 0.2);
+    content: '';
+}
+
+.panel {
+    background-color: #f8f8f8;
+}
+
+.dropdown-menu:after {
+    left: 50%;
+    margin-left: -4px;
+    position: absolute;
+    top: -6px;
+    display: inline-block;
+    border-right: 6px solid transparent;
+    border-bottom: 6px solid #ffffff;
+    border-left: 6px solid transparent;
+    content: '';
+}
+
+
+@media (min-width: 768px) {         /* center on the screen h/v on anything > 768px wide */
+    .modal:before {
+        content: '';
+        display: inline-block;
+        height: 100%;
+        vertical-align: middle;
+    }
+    .modal-dialog {
+        display: inline-block;
+        opacity: 0.95;
+        vertical-align: middle;
+        margin: 30px 0;
+    }
+    .modal-content {
+        border-radius: 9px;
+    }
+
+    .form-control.stack-top { border-radius: 5px; border-bottom-width: 1px; }
+    .form-control.stack-bottom { border-radius: 5px; border-top-width: 1px; }
+}

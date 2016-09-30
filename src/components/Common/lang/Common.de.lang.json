@@ -1,0 +1,25 @@
+)]}',
+{
+    "COMMON_OR":                    "oder",
+    "COMMON_EMAIL_ADDRESS":         "E-Mail-Adresse",
+    "COMMON_PASSWORD":              "passwort",
+    "COMMON_NAME":                  "name",
+    "COMMON_FIRST":                 "erste",
+    "COMMON_LAST":                  "letzte",
+    "COMMON_LOGIN":                 "Anmelden",
+    "COMMON_LOGOUT":                "Abmelden",
+    "COMMON_VERIFY_CODE":           "Bestätigungs-Code",
+    "COMMON_CREATE":                "Schaffen",
+    "COMMON_USER":                  "Benutzer",
+    "COMMON_GROUP":                 "Gruppe",
+    "COMMON_SEARCH_LONG":           "Suchen Sie etwas?",
+    "COMMON_SEARCH_SHORT":          "Suche",
+
+    "HELP_COMMON_FIELD_REQUIRED":   "erforderlich",
+    "HELP_COMMON_ADDRESS_INVALID":  "Adresse ist ungültig",
+    "HELP_COMMON_TOO_SHORT":        "zu Kurz",
+    "HELP_COMMON_TOO_LONG":         "zu Lange",
+    "HELP_COMMON_INVALID":          "Ungültig",
+    "HELP_COMMON_INCORRECT":        "Nicht Korrekt",
+    "HELP_COMMON_UNEXPECTED":       "Ein unerwarteter Fehler ist aufgetreten. Bitte versuchen Sie es erneut."
+}

@@ -1,0 +1,26 @@
+)]}',
+{
+    "NULL":                         "",
+    "COMMON_OR":                    "أو",
+    "COMMON_EMAIL_ADDRESS":         "عنوان البريد الإلكتروني",
+    "COMMON_PASSWORD":              "كلمة المرور",
+    "COMMON_NAME":                  "اسم",
+    "COMMON_FIRST":                 "أولا",
+    "COMMON_LAST":                  "آخر",
+    "COMMON_LOGIN":                 "تسجيل الدخول",
+    "COMMON_LOGOUT":                "تسجيل الخروج",
+    "COMMON_VERIFY_CODE":           "رمز التحقق",
+    "COMMON_CREATE":                "خلق",
+    "COMMON_USER":                  "المستخدم",
+    "COMMON_GROUP":                 "مجموعة",
+    "COMMON_SEARCH_LONG":           "تبحث عن شيء ؟",
+    "COMMON_SEARCH_SHORT":          "بحث",
+
+    "HELP_COMMON_FIELD_REQUIRED":   "مطلوب",
+    "HELP_COMMON_ADDRESS_INVALID":  "عنوان غير صالح",
+    "HELP_COMMON_TOO_SHORT":        "قصيرة جدا",
+    "HELP_COMMON_TOO_LONG":         "طويل جدا",
+    "HELP_COMMON_INVALID":          "غير صالح",
+    "HELP_COMMON_INCORRECT":        "غير صحيح",
+    "HELP_COMMON_UNEXPECTED":       "حدث خطأ غير متوقع. يرجى المحاولة مرة أخرى."
+}

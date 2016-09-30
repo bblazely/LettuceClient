@@ -1,0 +1,46 @@
+ul.EntitySearchResultList {
+    list-style-type: none;
+    padding-left: 0;
+    margin-left: 0;
+    margin-bottom: 0;
+}
+
+ul.EntitySearchResultPlate.selected {
+    background-color: #eee;
+}
+
+ul.EntitySearchResultList li.item {
+    margin-bottom: 2px;
+}
+
+ul.EntitySearchResultList li.header {
+    border-bottom: 1px dotted #CCC;
+    margin: 5px 0;
+    color: #888;
+    text-transform: uppercase;
+    font-size: 0.8em;
+    font-weight: bold;
+    display:block;
+}
+
+ul.EntitySearchResultList li.footer {
+    border-top: 1px dotted #CCC;
+    margin: 5px 0 0 0;
+    color: #888;
+    font-size: 0.8em;
+    font-weight: bold;
+    display:block;
+    text-align: right;
+    cursor: pointer;
+}
+
+
+
+ul.EntitySearchResultList li.item:focus {
+    background-color: #DDD;
+}
+
+ul.EntitySearchResultList li.item:active {
+    background-color: #BBB;
+}
+

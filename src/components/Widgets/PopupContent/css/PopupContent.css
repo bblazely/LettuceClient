@@ -1,0 +1,11 @@
+.popup-content {
+    position: relative !important;
+}
+
+.popup-content .popover .popover-content {
+    position: absolute; overflow-x: hidden; overflow-y: auto; min-width: 220px; min-height: 64px;
+}
+
+.popup-content .popover {
+    max-width: none;
+}

@@ -1,0 +1,135 @@
+<form name="lnf" class="login-native clearfix" ng-submit="submit()" role="form" ng-model-options="{updateOn: 'blur', debounce: 0}" novalidate>
+
+    <!-- Failure Alerts -->
+    <div ng-messages="alerts" ng-messages-multiple ng-messages-include="Common.HelpText" ng-class="{'alert alert-danger': alerts}">
+        <div ng-message="verified"><span translate>HELP_LOGIN_NATIVE_VERIFIED</span></div>
+        <div ng-message="verify_fail"><span translate>HELP_LOGIN_NATIVE_VERIFY_LINK_FAIL</span></div>
+    </div>
+
+    <!-- Forgot Password -->
+    <div class="fade" collapse="!view.is(VIEW.FORGOT_PW)">
+        <h4 translate>LOGIN_FORGOT_PW_HEAD</h4>
+        <p translate>LOGIN_FORGOT_PW_PARA</p>
+    </div>
+
+    <!-- Sign Up Controls -->
+    <div collapse="!view.is(VIEW.SIGN_UP)" class="fade">
+        <div class="form-group has-feedback" ng-class="{'has-error': !lnf.first_name.valid() || !lnf.last_name.valid()}">
+            <label class="control-label" for="first_name" accesskey="n">
+                <span class="fa fa-user fa-fw" aria-hidden="true"></span> <span translate="COMMON_NAME"></span>
+            </label>
+            <div class="row">
+                <div class="col-sm-6">
+                    <input input-auto-direction="" auto-focus="view.is(VIEW.SIGN_UP)" class="stack-top form-control" id="first_name" placeholder="{{'COMMON_FIRST' | translate}}" type="text" name="first_name" maxlength="64" ng-model="data.first_name" ng-required="view.is(VIEW.SIGN_UP)">
+                </div>
+                <div class="col-sm-6">
+                    <label class="sr-only" for="last_name" translate>COMMON_LAST_NAME</label>
+                    <input input-auto-direction="" class="stack-bottom form-control" id="last_name" placeholder="{{'COMMON_LAST' | translate}}" type="text" name="last_name" maxlength="64" ng-model="data.last_name" ng-required="view.is(VIEW.SIGN_UP)">
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="col-sm-12">
+        <!-- Verifying Account -->
+        <div class="fade" collapse="!view.is([VIEW.VERIFY_OFFLINE, VIEW.VERIFY_ONLINE, VIEW.VERIFY_RESEND])">
+            <h4 translate>LOGIN_VERIFY_EMAIL_HEAD</h4>
+            <p>{{ (view.is(VIEW.VERIFY_RESEND) ? 'LOGIN_VERIFY_RESEND_PARA' : 'LOGIN_VERIFY_EMAIL_PARA') | translate }}</p>
+            <p collapse="view.is(VIEW.VERIFY_RESEND)" translate>LOGIN_VERIFY_EMAIL_PARA_OFFLINE</p>
+        </div>
+
+        <div collapse="!view.is(VIEW.VERIFY_ONLINE)" class="fade">
+            <div class="hl">{{'COMMON_OR' | translate}}</div>
+            <p translate>LOGIN_VERIFY_EMAIL_PARA_ONLINE</p>
+            <div class="form-group has-feedback" ng-class="{'has-error': !lnf.verify_code.valid()}">
+                <label class="control-label" for="verify_code" accesskey="v" translate>COMMON_VERIFY_CODE
+                    <span class="fa fa-barcode fa-fw" aria-hidden="true"></span> <span translate="COMMON_VERIFY_CODE"></span>
+                </label>
+                <input class="form-control" id="verify_code" auto-focus="view.is(VIEW.VERIFY_ONLINE)" placeholder="########" type="code" name="verify_code" ng-model="data.verify_code" ng-minlength="8" ng-maxlength="8" maxlength="8" ng-required="view.is(VIEW.VERIFY_ONLINE)">
+                <i class="form-control-feedback fa"></i>
+                <div class="form-control-help" ng-messages="lnf.verify_code.$error">
+                    <div ng-message="invalid"><span translate>HELP_LOGIN_NATIVE_VERIFY_FAIL</span></div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Email Address -->
+        <div class="form-group has-feedback" ng-class="{'has-error': !lnf.email.valid()}">
+            <label class="control-label" for="email" accesskey="e">
+                <span class="fa fa-envelope fa-fw" aria-hidden="true"></span> <span translate="COMMON_EMAIL_ADDRESS"></span>
+            </label>
+            <input class="form-control" auto-focus="view.is([VIEW.LOG_IN, VIEW.FORGOT_PW])" id="email" type="email" name="email" ng-model="data.email" required ng-disabled="view.is([VIEW.VERIFY_ONLINE, VIEW.VERIFY_OFFLINE, VIEW.VERIFY_RESEND])">
+            <span class="fa form-control-feedback fa"></span>
+            <div class="form-control-help" ng-messages="lnf.email.$error" ng-messages-include="Common.HelpText">
+                <div ng-message="notfound"><span translate translate-compile>HELP_LOGIN_NATIVE_NOT_FOUND</span></div>
+                <div ng-message="exists"><span translate translate-compile>HELP_LOGIN_NATIVE_EXISTS</span></div>
+                <div ng-message="invalid"><span translate translate-compile>HELP_LOGIN_NATIVE_EMAIL_INVALID</span></div>
+            </div>
+        </div>
+
+        <!-- Email Address Confirmation -->
+        <div collapse="!view.is(VIEW.SIGN_UP)" class="fade">
+            <div class="form-group has-feedback" ng-class="{'has-error': !lnf.email_confirm.valid()}">
+                <label class="control-label" for="email_confirm">
+                    <span class="fa fa-envelope fa-fw" aria-hidden="true"></span> <span translate="LOGIN_CONFIRM_EMAIL_ADDRESS"></span>
+                </label>
+                <input class="form-control" id="email_confirm" type="email" name="email_confirm" validate-match="data.email" validate-match-enabled="view.is(VIEW.SIGN_UP)" ng-model="data.email_confirm" ng-required="view.is(VIEW.SIGN_UP)">
+                <i class="form-control-feedback fa"></i>
+                <div class="form-control-help" ng-messages="lnf.email_confirm.$error" ng-messages-include="Common.HelpText">
+                    <div ng-message="match"><span translate>HELP_LOGIN_NATIVE_EMAIL_MISMATCH</span></div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Password -->
+        <div collapse="!view.is([VIEW.SIGN_UP, VIEW.LOG_IN])" class="fade in">
+            <div class="form-group has-feedback" ng-class="{'has-error': !lnf.password.valid()}">
+                <label class="control-label" for="password" accesskey="p">
+                    <span class="fa fa-key fa-fw" aria-hidden="true"></span> <span translate="COMMON_PASSWORD"></span>
+                </label>
+                <input class="form-control" id="password" name="password" type="password" ng-minlength="8" ng-model="data.password" auto-focus="view.is([VIEW.LOG_IN]) && data.email" ng-required="view.is([VIEW.SIGN_UP, VIEW.LOG_IN])">
+                <i class="form-control-feedback fa"></i>
+                <div class="form-control-help" ng-messages="lnf.password.$error" ng-messages-include="Common.HelpText">
+                    <div ng-message="incorrect"><span translate="HELP_LOGIN_NATIVE_PW"></span></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Submit Button -->
+    <div class="col-sm-12">
+        <div class="form-group">
+            <button type="submit" class="btn btn-primary btn-block">{{ submitButtonText() | translate }}</button>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <div class="col-sm-12 login-native-footer">
+        <!-- Forgot Password Prompt -->
+        <div collapse="!view.is(VIEW.LOG_IN)" class="fade in" >
+            <div>
+                <a ng-click="view.change(VIEW.FORGOT_PW)" translate="LOGIN_FORGOT_PW"></a><br/>
+                <strong translate="LOGIN_NO_ACCOUNT"></strong> <a ng-click="view.change(VIEW.SIGN_UP, viewCallback)" translate="LOGIN_SIGN_UP"></a>
+            </div>
+        </div>
+
+        <!-- Have Account Already? Prompt -->
+        <div collapse="!view.is(VIEW.SIGN_UP)" class="fade">
+            <span translate="LOGIN_HAVE_ACCOUNT"></span> <a ng-click="view.change(VIEW.LOG_IN)" translate="COMMON_LOGIN"></a>
+        </div>
+
+        <!-- No Verification Email? -->
+        <div collapse="!view.is(VIEW.VERIFY_ONLINE)" class="fade" >
+            <div><a ng-click="view.change(VIEW.VERIFY_RESEND)" translate="LOGIN_NO_VERIFICATION_EMAIL"></a></div>
+        </div>
+
+        <!-- Verification Email Found -->
+        <div collapse="!view.is(VIEW.VERIFY_RESEND)" class="fade">
+            <div><a ng-click="showVerification()" translate="LOGIN_FOUND_VERIFICATION_EMAIL"></a></div>
+        </div>
+
+        <!-- Remembered Password Prompt -->
+        <div collapse="!view.is(VIEW.FORGOT_PW)" class="fade">
+            <a ng-click="view.change(VIEW.LOG_IN)" translate="LOGIN_REMEMBER_PW"></a>
+        </div>
+    </div>
+</form>

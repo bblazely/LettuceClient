@@ -1,0 +1,11 @@
+<div class="prompt-modal">
+    <div class="modal-header">
+        <span class="modal-icon fa fa-sign-in"></span><span>{{heading}}</span>
+    </div>
+    <div class="modal-body">
+        {{message}}<br/>
+    </div>
+    <div class="modal-footer">
+        <button class="btn btn-primary" ng-repeat="item in options" ng-click="$close(item.value)">{{item.label}}</button>
+    </div>
+</div>

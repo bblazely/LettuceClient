@@ -1,0 +1,12 @@
+A Group Module for id: {{entity_data.public_id}}
+
+<div class="debug" ng-if="::perm.has(PERMISSION.GROUP.MEMBER_VIEW)">You can view the membership of this group!</div>
+<div class="debug" ng-if="::perm.has(PERMISSION.COMMON.OWNER)">You are the owner of this group.</div>
+<br/>
+<div ng-if="::perm.has(PERMISSION.GROUP.MEMBER_VIEW)" entity-group-member-list="{{::entity_data.entity_id}}"></div>
+
+<div ng-if="::perm.has(PERMISSION.COMMON.OWNER)">
+        <div ltc-fb-invite ltc-fb-invite-callback="inviteCallback(entity)" ltc-fb-invite-message="Come and join the club. You're invited to join the magnificent group, {{::entity_data.display_name}}">Invite Button</div>
+        <div entity-group-member-invite="{{::entity_data.entity_id}}"></div>
+</div>
+<span ng-bind="::entity_data.entity_id"></span>

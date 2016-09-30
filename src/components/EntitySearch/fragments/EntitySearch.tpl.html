@@ -1,0 +1,11 @@
+<div class="popup-content" popup-content-close-on="statechange external blur" popup-content-close-if="entity_search.hasSelection()" popup-content-ready="entity_search.hasResult()">
+    <div class="iterator">
+        <div class="has-feedback" ng-class="{'is-loading': entity_search.isSearching()}">
+            <input input-auto-direction="" type='text' class="iterator-trigger popup-content-trigger entity-search-trigger form-control" placeholder="{{ 'COMMON_SEARCH_LONG' | translate}}">
+            <i class="form-control-feedback fa fa-search"></i>
+        </div>
+        <div class="popup-content-container">
+            <div entity-search-result-list="" entity-search-query="entity_search.query"></div>
+        </div>
+    </div>
+</div>

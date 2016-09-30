@@ -1,0 +1,12 @@
+.EntityUserGroupList .EntityPlate {
+    margin: 2px;
+    background-color: #eee;
+    border-top-left-radius: 25px;
+    border-bottom-left-radius: 25px;
+    padding: 2px;
+    height: 40px;
+}
+
+.EntityUserGroupList .EntityPlate:hover {
+    background-color: #ddd;
+}

@@ -1,0 +1,11 @@
+<div class="login-panel-modal">
+    <div class="modal-header">
+        <span class="modal-icon fa fa-sign-in"></span><span>{{ 'COMMON_LOGIN' | translate }} {{ 'COMMON_OR' | translate }} {{ 'LOGIN_SIGN_UP' |translate}}</span>
+        <button type="button" class="close" ng-click="$dismiss()" aria-hidden="true">
+            <span class="fa fa-times-circle" aria-label="close button"></span>
+        </button>
+    </div>
+    <div class="modal-body">
+        <login onLogin="$dismiss()"/>
+    </div>
+</div>

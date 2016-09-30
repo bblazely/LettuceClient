@@ -1,0 +1,26 @@
+)]}',
+{
+    "NULL":                         "",
+    "COMMON_OR":                    "or",
+    "COMMON_EMAIL_ADDRESS":         "Email Address",
+    "COMMON_PASSWORD":              "Password",
+    "COMMON_NAME":                  "Name",
+    "COMMON_FIRST":                 "First",
+    "COMMON_LAST":                  "Last",
+    "COMMON_LOGIN":                 "Log In",
+    "COMMON_LOGOUT":                "Log Out",
+    "COMMON_VERIFY_CODE":           "Verification Code",
+    "COMMON_CREATE":                "Create",
+    "COMMON_USER":                  "User",
+    "COMMON_GROUP":                 "Group",
+    "COMMON_SEARCH_LONG":           "Looking for something?",
+    "COMMON_SEARCH_SHORT":          "Search",
+
+    "HELP_COMMON_FIELD_REQUIRED":   "Required",
+    "HELP_COMMON_ADDRESS_INVALID":  "Address is not valid",
+    "HELP_COMMON_TOO_SHORT":        "Too Short",
+    "HELP_COMMON_TOO_LONG":         "Too Long",
+    "HELP_COMMON_INVALID":          "Not Valid",
+    "HELP_COMMON_INCORRECT":        "Incorrect",
+    "HELP_COMMON_UNEXPECTED":       "An unexpected error occured. Please try again."
+}

@@ -1,0 +1,17 @@
+.notify-badge.top-left {
+    position: absolute;
+    right: 13px;
+    top: -5px;
+}
+
+.notify-badge {
+    background-color: red;
+    pointer-events: none;
+}
+
+.notify-badge.badge {
+    box-shadow: 0 0 3px 1px gray;
+    z-index: 5;
+    font-size: 10px;
+    padding: 2px 6px;
+}

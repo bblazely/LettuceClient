@@ -1,0 +1,25 @@
+.customcollapse .collapsed {
+    display: none;
+}
+
+.customcollapse {
+    -webkit-transition: .25s ease all;
+    -moz-transition: .25s ease all;
+    -o-transition: .25s ease all;
+    transition: .25s ease all;
+    opacity: 1;
+    height: 60px;
+    overflow: hidden;
+}
+
+.customcollapse.ng-hide {
+    opacity: 0;
+    height: 0;
+    overflow: hidden;
+}
+
+.customcollapse.ng-hide-add,
+.customcollapse.ng-hide-remove {
+    display: block !important;
+    overflow: hidden;
+}

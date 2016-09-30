@@ -1,0 +1,91 @@
+.select-external-external-provider {
+    text-align: center;
+    display: inline-block;
+}
+
+.external-provider-icon {
+    position: relative;
+    border: 1px solid transparent;
+    border-radius: 50%;
+    padding: 0;
+    font-size: 25px;
+    color: #888;
+    background-color: transparent;
+    outline: none;
+    vertical-align: middle;
+    margin: 0 2px;
+    width: 40px;
+    height: 40px;
+}
+
+.external-provider-icon:hover:enabled {
+    background-color: white;
+    box-shadow: 0 0 10px #888;
+}
+
+.external-provider-icon.selected, .external-provider-icon:active {
+    color: white !important;
+    text-shadow: none !important;
+    border: 1px solid transparent !important;
+}
+
+.external-provider-icon:disabled {
+    opacity: 0.5;
+    cursor: default;
+}
+
+/* Facebook */
+.external-provider-icon.fb-ico .fa {
+    margin-top: 2px;
+    margin-left: -1px;
+}
+
+.external-provider-icon.fb-ico:hover:enabled {
+    color: #3b5998;
+}
+
+.external-provider-icon.fb-ico.selected, .external-provider-icon.fb-ico:active {
+    background-color: #3b5998;
+}
+
+/* Microsoft Live */
+.external-provider-icon.ms-ico .fa {
+    margin-top: -2px;
+    margin-left: -2px;
+}
+
+.external-provider-icon.ms-ico:hover:enabled {
+    color: #4471C6;
+}
+
+.external-provider-icon.selected.ms-ico, .external-provider-icon.ms-ico:active {
+    background-color: #4471C6;
+}
+
+/* Google Plus */
+.external-provider-icon.gp-ico .fa {
+    margin-top: 4px;
+    margin-left: 4px;
+}
+
+.external-provider-icon.gp-ico:hover:enabled {
+    color: #dd4b39;
+}
+
+.external-provider-icon.gp-ico.selected, .external-provider-icon.gp-ico:active {
+    background-color: #dd4b39;
+}
+
+/* Linked In */
+.external-provider-icon.li-ico .fa {
+    margin-left:1px;
+}
+
+.external-provider-icon.li-ico:hover:enabled {
+    color: #007bb6;
+}
+
+.external-provider-icon.li-ico.selected, .external-provider-icon.li-ico:active {
+    background-color: #007bb6;
+}
+

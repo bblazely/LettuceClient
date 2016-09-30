@@ -1,0 +1,13 @@
+<div class="select-external-provider">
+    <div ng-if="providers" class="fa-lg">
+        <span ng-repeat="p in providers">
+            <label for="{{::p.class_name}}" class="sr-only">{{::p.display_name}}</label>
+            <button id="{{::p.class_name}}" class="external-provider-icon {{::p.class_name}}" ng-class="isSelected(p)" ng-click='select(p)' ng-disabled="isDisabled(p)" value="{{p.display_name}}">
+                <i class="fa fa-fw fa-{{::p.class_name}}"></i>
+            </button>
+        </span>
+    </div>
+    <div ng-if="!providers">
+        No External Providers Available.
+    </div>
+</div>

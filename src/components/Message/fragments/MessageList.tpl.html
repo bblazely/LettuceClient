@@ -1,0 +1,14 @@
+<div loading-overlay="tpl.loading()">
+    <div ng-if="tpl.messages.length > 0">
+        <ul class='MessageList'  >
+            <!-- looks like this was mid refactor when the whole entity/sorting/collections mess started. refactoring to make EntityRequestList a generic message handler. broken! -->
+            <li ng-repeat="message in tpl.messages | orderBy:'time_created':true" class="iterator-item item">
+                <div ng-if="message.type == 700" message-plate="message"></div>
+                <div ng-if="message.type == 701" message-request-plate="message"></div>
+            </li>
+        </ul>
+    </div>
+    <div ng-if="tpl.messages.length == 0">
+        <span class="empty">No Messages Found</span> <!-- TODO: Style and Translate this -->
+    </div>
+</div>

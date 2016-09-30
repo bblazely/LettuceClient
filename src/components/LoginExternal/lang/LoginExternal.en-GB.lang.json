@@ -1,0 +1,8 @@
+)]}',
+{
+    "ERR_EXTERNAL_LOGIN_INTERRUPT":   "Login was cancelled or interrupted.",
+    "ERR_EXTERNAL_LOGIN_UNKNOWN":     "Login failed unexpectedly and we don't know why. Please try again.",
+    "ERR_EXTERNAL_LOGIN_XSRF":        "Login with that external provider could not be completed.",
+    "ERR_EXTERNAL_LOGIN_COOKIE":      "Cookies aren't enabled in your browser. Cookies are required to use this site.",
+    "ERR_EXTERNAL_LOGIN_SYSTEM":      "Login failed due to a system error. The fault has been logged. Please try again in a few minutes."
+}

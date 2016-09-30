@@ -1,0 +1,28 @@
+A Person Module for id: {{entity_data.public_id}}
+
+<div class="debug" ng-if="perm.has(PERMISSION.USER.OWNER)">You are the owner of this profile!</div>
+<div class="debug" ng-if="perm.has(PERMISSION.USER.VIEW)">You are allowed to view this profile!</div>
+<br/>
+<div class="panel" ng-if="perm.has(PERMISSION.USER.OWNER)">
+
+    <div style="float:left; margin: 10px;">
+        <div entity-group-create="true"></div><br/>&nbsp;<br/>
+        <h4 translate>TITLE_GROUP_OWNED</h4>
+        <div style="width: 300px; height: auto; max-height: 200px; overflow: hidden; overflow-y: auto;">
+            <div entity-user-group-list="11"></div>
+        </div>
+    </div>
+
+    <div style="float:left; margin: 10px;">
+        <h4 translate>TITLE_GROUP_MEMBERSHIP</h4>
+        <div style="width: 300px; height:auto; max-height:250px; overflow: hidden; overflow-y: auto;">
+            <entity-user-group-list></entity-user-group-list>
+        </div>
+        <h4 translate>TITLE_GROUP_WATCHING</h4>
+        <div style="width: 300px; height:200px; overflow: hidden; overflow-y: auto;">
+            (Not Yet Implemented)
+        </div>
+
+    </div>
+</div>
+

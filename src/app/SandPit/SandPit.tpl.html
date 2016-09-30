@@ -1,0 +1,147 @@
+ <!-- Template method -->
+
+        <a ng-click="setlang('en-GB')">en-GB</a> | <a ng-click="setlang('de')">German</a> | <a ng-click="setlang('ar')">Arabic</a>
+
+<input input-auto-direction="">
+
+     <!--   <div popover popover-placement="right" popover-auto-hide="false" anchor-template="components/Widgets/PopOver/PopOverAnchor.tpl.html" anchor-class="popover-anchor" anchor-label="Anchor as Template" popover-class="popover" popover-label="Test PopOver">
+            <div requireuser>
+                <ul ng-controller="Tree">
+                    <li ng-repeat="data in state.tree" ng-include="'components/Tree/TreeNode.html'"></li>
+                </ul>
+            </div>
+        </div>
+        
+        <hr>
+        <span type="password" name="input4" length="80" popover popover-placement='top' popover-trigger="focus" popover-class="popover" anchor-substitute="input">Transcluded Data</span>
+
+        <hr>
+        <popover type="password" name="input5" length="80" popover-placement='bottom' popover-trigger="focus" popover-class="popover" anchor-substitute="input">Transcluded Data 2</popover>
+        <justified type="password" name="input5" length="80" popover-placement='bottom' popover-trigger="focus" popover-class="popover" anchor-substitute="input">Transcluded Data 3</justified>
+        
+        <hr>
+        <input ng-model="input6"><br>
+        <a style="display: inline-block" href="javascript:;" popover popover-class="popover">
+            <span>Complex Inline Anchor Tag</span><br>
+            <b>Input: {{input6}}</b>
+            <div class="transclude">
+                Transcluded Data 4<br>
+                <b>Input Again: {{input6}}</b>
+            </div>
+        </a>
+-->
+<div>Sandpit Loaded</div>
+         <div style="background-color:white">
+<!--             <select-social-network shared></select-social-network>
+             <select-social-network></select-social-network>-->
+        </div>
+
+ <!--<div state="" style="position: relative; top: 40px;">
+     <div class="has-feedback">
+         <input state-trigger="" ng-model="state.trigger_value" class="form-control">
+         <i class="form-control-feedback glyphicon glyphicon-search"></i>
+     </div>
+     <div state-content="" state-update="state.trigger_value" style="position: relative;"><div entity-search-result="" has-result="state.has_content" query="state.trigger_value"></div></div>
+ </div>
+
+
+
+ <div state="" style="position: absolute; bottom: 80px;">
+     <div class="has-feedback">
+         <input state-trigger="" ng-model="state.trigger_value" class="form-control">
+         <i class="form-control-feedback glyphicon glyphicon-search"></i>
+     </div>
+     <div state-content="" state-update="state.trigger_value" style="position: relative;"><div entity-search-result="" has-result="state.has_content" query="state.trigger_value"></div></div>
+ </div>-->
+
+ <div class="popup-content pull-left" popup-content-close-on="external">
+     <button class="popup-content-trigger">Popup Content Test A!</button>
+     <div class="popup-content-container">
+         <a ui-sref="root.about">Should </a><input type="text">
+         <select><option>Hello</option><option>World</option></select>
+         <button ng-click="alert()">Alert</button>
+         <input type="checkbox" checked id="blah"><label for="blah">Selected</label>
+         <input type="range">
+         <textarea></textarea>
+         <login-native></login-native>
+
+     </div>
+ </div>
+
+ <div class="popup-content pull-right" popup-content-close-on="external">
+     <button class="popup-content-trigger">Popup Content Test B!</button>
+     <div class="popup-content-container">
+        <a ui-sref="root.about">Should </a><input type="text">
+        <select><option>Hello</option><option>World</option></select>
+        <button ng-click="alert()">Alert</button>
+         <input type="checkbox" checked id="blah"><label for="blah">Selected</label>
+         <input type="range">
+         <textarea></textarea>
+         <login-native></login-native>
+
+     </div>
+ </div>
+
+ <div style="background-color: white;" social-login=""></div>
+
+
+ <div style="position: absolute; left: 0; height: 30px; top: 150px; width:100%;">
+     <div class="popup-content pull-left" popup-content-close-on="external">
+         <button class="popup-content-trigger">Popup Content Test C!</button>
+         <div class="popup-content-container">
+             <a ui-sref="root.about">Should </a><input type="text">
+             <select><option>Hello</option><option>World</option></select>
+             <button ng-click="alert()">Alert</button>
+             <input type="checkbox" checked id="blah"><label for="blah">Selected</label>
+             <input type="range">
+             <textarea></textarea>
+             <login-native></login-native>
+
+         </div>
+     </div>
+
+     <div class="popup-content pull-right" popup-content-close-on="external">
+         <button class="popup-content-trigger">Popup Content Test D!</button>
+         <div class="popup-content-container">
+             <a ui-sref="root.about">Should </a><input type="text">
+             <select><option>Hello</option><option>World</option></select>
+             <button ng-click="alert()">Alert</button>
+             <input type="checkbox" checked id="blah"><label for="blah">Selected</label>
+             <input type="range">
+             <textarea></textarea>
+             <login-native></login-native>
+
+         </div>
+     </div>
+ </div>
+
+
+<div style="position: absolute; left: 0; height: 30px; bottom: 10px; width:100%;">
+ <div class="popup-content pull-left" popup-content-close-on="external">
+     <button class="popup-content-trigger">Popup Content Test C!</button>
+     <div class="popup-content-container">
+         <a ui-sref="root.about">Should </a><input type="text">
+         <select><option>Hello</option><option>World</option></select>
+         <button ng-click="alert()">Alert</button>
+         <input type="checkbox" checked id="blah"><label for="blah">Selected</label>
+         <input type="range">
+         <textarea></textarea>
+         <login-native></login-native>
+
+     </div>
+ </div>
+
+ <div class="popup-content pull-right" popup-content-close-on="external">
+     <button class="popup-content-trigger">Popup Content Test D!</button>
+     <div class="popup-content-container">
+         <a ui-sref="root.about">Should </a><input type="text">
+         <select><option>Hello</option><option>World</option></select>
+         <button ng-click="alert()">Alert</button>
+         <input type="checkbox" checked id="blah"><label for="blah">Selected</label>
+         <input type="range">
+         <textarea></textarea>
+         <login-native></login-native>
+
+     </div>
+ </div>
+</div>

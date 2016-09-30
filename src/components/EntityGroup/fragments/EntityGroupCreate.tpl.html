@@ -1,0 +1,14 @@
+<form role="form" ng-submit="doGroupCreate()" simple-state loading-overlay="state.is(STATE.PENDING)" ng-model-options="{updateOn: 'blur', debounce: 0}" novalidate>
+    <h4 translate>TITLE_GROUP_CREATE</h4>
+    <div class="form-group has-feedback" ng-class="{'has-error': !form.group_name.valid()}">
+        <label class="control-label group" for="display_name" accesskey="n" translate>COMMON_NAME</label>
+        <input input-auto-direction="" class="form-control" type="text" id="display_name" name="group_name" ng-model="data.display_name" ng-minlength="3" ng-maxlength="128">
+        <i class="form-control-feedback"></i>
+        <div class="form-control-help" ng-messages="form.display_name.$error" ng-messages-include="Common.HelpText"></div>
+    </div>
+    <div class="col-sm-12">
+        <div class="form-group">
+            <button type="submit" class="btn btn-primary btn-block" translate>COMMON_CREATE</button>
+        </div>
+    </div>
+</form>

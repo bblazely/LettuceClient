@@ -1,0 +1,10 @@
+)]}',
+{
+    "TITLE_GROUP_CREATE":       "Create a Group",
+    "TITLE_GROUP_INVITE":       "Invite a Member",
+    "TITLE_GROUP_MEMBERSHIP":   "Your Group Membership",
+    "TITLE_GROUP_OWNED":        "Groups You Manage",
+    "TITLE_GROUP_WATCHING":     "Groups you are watching",
+    "BUTTON_GROUP_SEND_INVITE": "Send Invite",
+    "HELP_GROUP_NAME_SHORT":    "This name is too short"
+}

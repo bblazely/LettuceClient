@@ -1,0 +1,10 @@
+<div class="login-external">
+    <!-- TODO: Change this over to ng-messages or an alert directive/component -->
+    <div collapse="!data.error.show" class="fade">
+        <alert class="alert-danger" close="dismissError()">{{data.error.value |translate}}</alert>
+        <div class="clearfix"></div>
+    </div>
+    <div>
+        <select-external-provider providers="data.providers" selected="provider_state.selected" disabled="provider_state.disabled" no-deselect multiple></select-external-provider>
+    </div>
+</div>

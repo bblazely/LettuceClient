@@ -1,0 +1,5 @@
+<ul class="EntitySearchResultList">
+    <li class="header" role="heading" ng-repeat-start="(sid, el) in search_result_list.getResult()" translate>{{search_result_list.getSchemaName(sid)}}</li>
+    <li ng-repeat="e in el" entity-search-result="::e" class="iterator-item item"></li>
+    <li ng-repeat-end class="iterator-item item footer" ng-if="search_result_list.hasMore(sid)" entity-search-more="sid">({{search_result_list.getResultOffset(sid)}} / {{search_result_list.getResultCount(sid)}}) More &raquo;</li>
+</ul>

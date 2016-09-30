@@ -1,0 +1,39 @@
+
+.loading-overlay {
+    overflow:hidden;
+    position: absolute;
+    display: none;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    opacity: 0;
+    height: 0;
+    z-index: 9999;
+    vertical-align: middle;
+    text-align: center;
+    transition: opacity 0.25s ease-in;
+}
+
+.loading-overlay-dark {
+    background-color: rgba(0,0,0,0.5);
+    background: radial-gradient(circle, rgba(0,0,0,.15), rgba(0, 0, 0, .85));
+}
+
+.loading-overlay-light {
+    background-color: rgba(255,255,255,0.5);
+    background: radial-gradient(circle, rgba(255,255,255,.85), rgba(255, 255, 255, .15));
+}
+
+.loading-overlay.in {
+    height: 100%;
+    opacity: 1;
+    display: block;
+}
+
+.loading-overlay:before {
+    content: '';
+    display: inline-block;
+    height: 100%;
+    vertical-align: middle;
+}

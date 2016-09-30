@@ -1,0 +1,12 @@
+<div class="login-panel" simple-state style="max-height: 385px;">
+    <div loading-overlay="state_login.is(STATE.PENDING)" >
+        <div class="fade in" collapse="noLogin()" style="display: block;">
+            <login-external state-login="state_login" response-login="response"></login-external>
+            <div class="hl">{{'COMMON_OR' | translate}}</div>
+        </div>
+        <login-native state-login="state_login" state-view="state_view"></login-native>
+        <div class="input-sm internal-footer in" collapse="noLogin()">
+            <label>{{'USER_SESSION_PERSIST' | translate}} <input type="checkbox" class="checkbox-inline radio-right" ng-model="persist" ng-true-value="'persist'" ng-false-value="'session'"></label>
+        </div>
+    </div>
+</div>

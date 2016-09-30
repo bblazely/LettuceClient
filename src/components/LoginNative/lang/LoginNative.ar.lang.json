@@ -1,0 +1,29 @@
+)]}',
+{
+    "LOGIN_FORGOT_PW":                  "نسيت كلمة السر؟",
+    "LOGIN_FORGOT_PW_HEAD":             "أوه، كنت قد نسيت كلمة المرور؟",
+    "LOGIN_FORGOT_PW_PARA":             "أدخل عنوان البريد الإلكتروني الذي استخدمته عندما وقعت لكم و سنرسل لك رابطا ل إعادة تعيينها.",
+    "LOGIN_RESET_PW":                   "إعادة تعيين كلمة المرور",
+    "LOGIN_SIGN_UP":                    "سجل",
+    "LOGIN_NO_ACCOUNT":                 "لم يكن لديك حساب؟",
+    "LOGIN_HAVE_ACCOUNT":               "لديك حساب بالفعل ؟",
+    "LOGIN_REMEMBER_PW":                "تذكر كلمة المرور الخاصة بك ؟",
+    "LOGIN_CONFIRM_EMAIL_ADDRESS":      "تأكيد عنوان البريد الإلكتروني",
+
+    "LOGIN_NO_VERIFICATION_EMAIL":      "لم يحصل على البريد الإلكتروني التحقق؟",
+    "LOGIN_FOUND_VERIFICATION_EMAIL":   "البريد الإلكتروني التحقق وصلت للتو ؟",
+    "LOGIN_VERIFY_ONLINE":              "التحقق من حسابي",
+    "LOGIN_VERIFY_RESEND":              "إعادة إرسال التحقق من البريد الإلكتروني",
+    "LOGIN_VERIFY_RESEND_PARA":         "إذا لم تصل رسالة التحقق الأصلية ، يمكنك طلب واحدة جديدة من خلال النقر على الزر أدناه.",
+    "LOGIN_VERIFY_EMAIL_HEAD":          "التحقق من الحساب قيد الانتظار",
+    "LOGIN_VERIFY_EMAIL_PARA":          "تم إرسال رسالة التحقق إلى عنوان البريد الإلكتروني الذي قدمته.",
+    "LOGIN_VERIFY_EMAIL_PARA_OFFLINE":  "انقر على الرابط بداخلها لتفعيل حسابك .",
+    "LOGIN_VERIFY_EMAIL_PARA_ONLINE":   "أدخل رمز التحقق المقدمة.",
+
+    "HELP_LOGIN_NATIVE_PW":             "هذه كلمة المرور غير صحيحة",
+    "HELP_LOGIN_NATIVE_EMAIL_MISMATCH": "يجب على عناوين البريد الإلكتروني تتطابق",
+    "HELP_LOGIN_NATIVE_NOT_FOUND":      "؟ <a ng-click='view.change(VIEW.SIGN_UP)'>{{'LOGIN_SIGN_UP' | translate}}</a> حساب غير موجود!",
+    "HELP_LOGIN_NATIVE_EXISTS":         "؟ <a ng-click='view.change(VIEW.FORGOT_PW)'>{{'LOGIN_FORGOT_PW' | translate}}</a> حساب موجود !",
+    "HELP_LOGIN_NATIVE_VERIFIED":       "وقد تم بالفعل التحقق من حسابك ، الرجاء تسجيل الدخول بشكل طبيعي.",
+    "HELP_LOGIN_NATIVE_EMAIL_INVALID":  "عنوان البريد الإلكتروني هذا غير صالح"
+}

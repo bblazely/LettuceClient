@@ -1,0 +1,14 @@
+li.item {
+    border: 1px solid transparent;
+}
+
+li.item:focus {
+    border-color: #e5e5e5;
+    background-color: #eee;
+    border-radius: 10px;
+}
+
+li.item:active {
+    border-color: #e5e5e5;
+    background-color: #eee;
+}

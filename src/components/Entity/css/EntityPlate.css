@@ -1,0 +1,103 @@
+.EntityPlate {
+    position: relative;
+    display: block;
+    height: 40px;
+    vertical-align: middle;
+    line-height: 1em;
+    font-size: 12px;
+    cursor: pointer;
+}
+
+.EntityPlate .selected {
+    background-color: #ddd;
+    border-radius: 10px;
+}
+
+.EntityPlate a:hover {
+    text-decoration: none;
+}
+
+.EntityPlate .Avatar {
+    display: inline-block;
+    background-color: #AAA;
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    vertical-align: top;
+}
+
+.EntityPlate .EntityType {
+    position: absolute;
+    right: 0;
+    top: 0;
+    margin: 5px;
+    color: #CCC;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: .65em;
+}
+
+.EntityPlate .DetailsWrapper {
+    display: inline-block;
+    margin-left: 5px;
+    position: relative;
+    max-width: 175px;
+    top: 50%;
+    transform: translateY(-50%);
+    overflow: hidden;
+}
+
+
+.EntityPlate .DisplayName {
+    display: block;
+    color: #333;
+}
+
+.EntityPlate .PublicId {
+    color: #08c;
+    font-size: .75em;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+/*.PublicId i {
+    font-size: 1.2em;
+}*/
+
+/* Small */
+
+.EntityPlateSmall .EntityPlate {
+    height: 20px;
+    width: auto;
+    margin-right: 5px;
+    display: inline;
+    line-height: inherit;
+}
+
+.EntityPlateSmall .EntityType {
+    display: none;
+}
+
+.EntityPlateSmall .PublicId {
+    display: none;
+}
+
+.EntityPlateSmall .DisplayName {
+    display: inline;
+    font-weight: bold;
+}
+
+.EntityPlateSmall .Avatar {
+    border: none;
+    width: 20px !important;
+    height: 20px !important;
+    border-radius: 10px;
+    float: left;
+}
+
+.EntityPlateSmall .DetailsWrapper {
+    display: inline;
+    position: inherit;
+    transform: none;
+    top: inherit;
+}

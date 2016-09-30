@@ -1,0 +1,21 @@
+<div class="userprofile">
+    <span ng-if="hasSession()" class="dropdown">
+        <span class="dropdown-toggle" style="cursor: pointer; position: relative;">
+            <b class="caret"></b>
+            <span class="hidden-xs">
+                <span ng-if="profile.display_name">{{profile.display_name}}</span>
+                <span ng-if="!profile.display_name">{{profile.first_name}} {{profile.last_name}}</span>
+            </span>
+            <img class="avatar" ng-src="{{profile.image_url}}">
+        </span>
+        <ul class="dropdown-menu pull-right arrow-box">
+            <li><a class="button" ng-click="showLoginDialog()">T8: Add Login</a></li>
+            <li><a class="button" ng-click="logout()">Profile</a></li>
+            <li><a class="button" ng-click="showChangePasswordDialog()">Change Password</a></li>
+            <li><a class="button logout-button" ng-click="logout()" translate="COMMON_LOGOUT"></a></li>
+        </ul>
+    </span>
+    <span ng-if="!hasSession()">
+        <a class="button login-button" ng-click="showLoginDialog()" translate="COMMON_LOGIN"></a>
+    </span>
+</div>

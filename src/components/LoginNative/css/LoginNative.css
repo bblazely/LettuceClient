@@ -1,0 +1,12 @@
+.login-native-footer {
+    position: relative;
+    text-align: center;
+    font-size: 0.9em;
+    margin-top: 10px;
+    padding-bottom: 5px;
+    bottom: 0;
+}
+
+.login-native button[type=submit] {
+    margin: 20px 0 0;
+}

@@ -1,0 +1,163 @@
+.avatar  {
+    width: 32px;
+    height: 32px;
+    background-size: 30px 30px;
+}
+.rounded { border-radius: 5px; border: none; }
+.error   { border: 1px solid red; background-color: #ffcccc; }
+#map-canvas { width: 300px; height: 300px; }
+
+
+.invisible {
+    position: absolute;
+    overflow: hidden;
+    clip: rect(0 0 0 0);
+    padding: 0;
+    border: 0;
+    margin: -1px;
+    height: 1px;
+    width: 1px;
+}
+
+.translate-cloak {
+    background-color: red;
+}
+
+.content { overflow-x: hidden; }
+
+html, body { height: 100%; }
+
+.content {
+    display: block;
+    height: 100%;
+    background: url(../img/bg/IMG_4905.jpg) top center no-repeat;
+    background-size: cover;
+}
+a { cursor: pointer }
+.animate-enter,
+.animate-leave
+{
+    -webkit-transition: 400ms cubic-bezier(0.250, 0.250, 0.750, 0.750) all;
+    -moz-transition: 400ms cubic-bezier(0.250, 0.250, 0.750, 0.750) all;
+    -ms-transition: 400ms cubic-bezier(0.250, 0.250, 0.750, 0.750) all;
+    -o-transition: 400ms cubic-bezier(0.250, 0.250, 0.750, 0.750) all;
+    transition: 400ms cubic-bezier(0.250, 0.250, 0.750, 0.750) all;
+    position: relative;
+    display: block;
+    overflow: hidden;
+    text-overflow: clip;
+    white-space:nowrap;
+}
+
+.animate-leave.animate-leave-active,
+.animate-enter {
+    opacity: 0;
+    width: 0px;
+    height: 0px;
+}
+
+
+/* Horizontal line (ala HR) with text in the center ie: --- Text --- */
+.hl {
+    overflow: hidden;
+    text-align: center;
+}
+.hl:before,
+.hl:after {
+    background-color: #000;
+    content: "";
+    display: inline-block;
+    height: 1px;
+    position: relative;
+    vertical-align: middle;
+    width: 50%;
+}
+.hl:before {
+    right: 0.5em;
+    margin-left: -50%;
+}
+.hl:after {
+    left: 0.5em;
+    margin-right: -50%;
+}
+/* End HL */
+
+.animate-enter.animate-enter-active,
+.animate-leave {
+    opacity: 1;
+    width: 150px;
+    height: 30px;
+}
+
+.debug  { background-color: #fee; border: 1px dotted #ddd; }
+
+ .orglist {
+	position: relative;
+	background: #88b7d5;
+        box-shadow: 1px 1px 3px #888;
+}
+.orglist:after {
+	left: 100%;
+	border: solid transparent;
+	content: " ";
+	height: 0;
+	width: 0;
+	position: absolute;
+	pointer-events: none;
+}
+
+.orglist:after {
+	border-color: rgba(136, 183, 213, 0);
+	border-left-color: #88b7d5;
+	border-width: 10px;
+	top: 50%;
+	margin-top: -10px;
+}
+
+.icon-mail {}
+
+.icon-mail.ng-enter,
+.icon-mail.ng-leave {
+    -webkit-transition:0.5s linear all;
+    -moz-transition:0.5s linear all;
+    -o-transition:0.5s linear all;
+    transition:0.5s linear all;
+}
+
+.icon-mail.ng-enter,
+.icon-mail.ng-leave.ng-leave-active {
+    opacity: 0;
+}
+
+.icon-mail.ng-leave,
+.icon-mail.ng-enter.ng-enter-active {
+    opacity: 1;
+}
+
+fieldset li { list-style-type: none; }
+fieldset ul { margin: 0 5px;}
+
+label {
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -khtml-user-select: none;
+    -ms-user-select: none;
+}
+
+/* Work Around for ABP blocking Social Media icons */
+
+.fa-fb-ico:before {
+      content: '\f09a';
+}
+
+.fa-ms-ico:before {
+    content: '\f17a';
+}
+
+.fa-gp-ico:before {
+    content: '\f0d5';
+}
+
+.fa-li-ico:before {
+    content: '\f0e1';
+}

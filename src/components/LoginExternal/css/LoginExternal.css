@@ -1,0 +1,18 @@
+.login-external {
+    text-align: center;
+}
+
+.provider-icon.selected:disabled {
+    opacity: 1;
+}
+
+.provider-icon.selected:disabled:after {
+    content: "\f00c";
+    text-shadow: 0 0 6px black;
+    font: normal normal normal 38px/1 FontAwesome;
+    position: absolute;
+    color: white;
+    opacity: 0.8;
+    right: 0;
+    bottom: 0;
+}

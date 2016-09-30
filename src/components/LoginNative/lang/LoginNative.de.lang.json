@@ -1,0 +1,16 @@
+)]}',
+{
+    "LOGIN_FORGOT_PW":              "Passwort vergessen?",
+    "LOGIN_FORGOT_PW_HEAD":         "Oh, Ihr Passwort vergessen haben?",
+    "LOGIN_FORGOT_PW_PARA":         "Geben Sie Ihre registrierte E-Mail-Adresse in das Feld ein und wir senden Ihnen einen Link zum Zurücksetzen Ihres Passworts.",
+    "LOGIN_RESET_PW":               "Passwort zurücksetzen",
+    "LOGIN_SIGN_UP":                "Melden Sie sich!",
+    "LOGIN_NO_ACCOUNT":             "Sie haben noch kein Konto?",
+    "LOGIN_HAVE_ACCOUNT":           "Haben bereits ein Konto?",
+    "LOGIN_REMEMBER_PW":            "Erinnerte vergessen?",
+    "LOGIN_CONFIRM_EMAIL_ADDRESS":  "Mail-Adresse bestätigen",
+    "LOGIN_RESEND_VERIFY":          "E-Mail erneut senden Verification",
+    "LOGIN_VERIFY_EMAIL_HEAD":      "Konto bis zur Überprüfung",
+    "LOGIN_VERIFY_EMAIL_PARA1":     "Wir wissen, dass Sie gerne loslegen, aber zuerst müssen wir sicherstellen, dass Ihre E-Mail-Adresse ist, nun ja, Ihnen!",
+    "LOGIN_VERIFY_EMAIL_PARA2":     "Eine E-Mail an die von Ihnen angegebene Adresse versendet. Bitte klicken Sie auf den Link im Inneren um Ihre Anmeldung abzuschließen."
+}

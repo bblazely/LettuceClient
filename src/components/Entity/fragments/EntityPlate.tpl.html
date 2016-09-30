@@ -1,0 +1,9 @@
+<div class="EntityPlate">
+    <img class="Avatar" ng-src="{{::(entity.image || ('assets/img/anon_' + entity.schema_id + '.png'))}}">
+<!--    <span class="EntityType" ng-bind="::entity.date_created"></span>-->
+    <div class="DetailsWrapper">
+        <a class="DisplayName" href="{{::entity.public_id}}">{{entity.display_name}}</a>
+        <span class="PublicId" ng-if="entity.pending">INVITATION_PENDING</span>
+        <span class="PublicId" ng-if="entity.public_id"><a href="{{::entity.public_id}}" tabindex="-1">{{::entity.public_id}}</a></span>
+    </div>
+</div>

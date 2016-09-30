@@ -1,0 +1,10 @@
+)]}',
+{
+"TITLE_GROUP_CREATE":       "Ein Gruppe gründen",
+"TITLE_GROUP_INVITE":       "Einladen Mitglied",
+"TITLE_GROUP_MEMBERSHIP":   "Ihre Gruppenmitgliedschaft",
+"TITLE_GROUP_OWNED":        "Gruppen, die Sie besitzen",
+"TITLE_GROUP_WATCHING":     "Gesehen Gruppen",
+"BUTTON_GROUP_SEND_INVITE": "Einladung abschicken",
+"HELP_GROUP_NAME_SHORT":    "Dieser Name ist zu kurz"
+}
